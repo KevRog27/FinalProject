@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=EnemyChain
+comment0.text=\r\n\ Controls\ Enemies\ in\ the\ chain-like\ structure\ as\ seen\ in\ Galaga\ (19XX)\r\n\r\n\ @author\ Paul\ Berend\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=w\ headX\ headY\ length
+comment1.target=EnemyChain(mayflower.World,\ float,\ float,\ int)
+numComments=2

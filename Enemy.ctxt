@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Enemy
+comment1.params=w
+comment1.target=Enemy(mayflower.World)
+comment2.params=w\ x\ y
+comment2.target=Enemy(mayflower.World,\ float,\ float)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=float\ getAngle()
+comment5.params=e
+comment5.target=void\ setFollowTarget(Enemy)
+numComments=6
