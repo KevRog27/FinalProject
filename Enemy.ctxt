@@ -1,13 +1,15 @@
 #BlueJ class context
 comment0.target=Enemy
-comment1.params=w
-comment1.target=Enemy(mayflower.World)
-comment2.params=w\ x\ y
-comment2.target=Enemy(mayflower.World,\ float,\ float)
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Enemy\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=h\ f\ d\ m\ s
+comment1.target=Enemy(int,\ double,\ int,\ double,\ java.lang.String)
+comment1.text=\r\n\ \r\n
+comment2.params=
+comment2.target=int\ getHealth()
 comment3.params=
-comment3.target=void\ act()
-comment4.params=
-comment4.target=float\ getAngle()
-comment5.params=e
-comment5.target=void\ setFollowTarget(Enemy)
+comment3.target=int\ getDamage()
+comment4.params=x
+comment4.target=double\ getFireRate(int)
+comment5.params=
+comment5.target=double\ getMovement()
 numComments=6

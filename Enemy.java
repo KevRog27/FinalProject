@@ -1,52 +1,40 @@
 import mayflower.*;
-
-public class Enemy extends Actor
+/**
+ * Write a description of class Enemy here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Enemy
 {
-    private float x;
-    private float y;
-    private float speed;
-    private float angle;
+    // instance variables - replace the example below with your own
+    private int health;
+    private double fireRate; // default projectiles per second
+    private int damage;
+    private double movementMultiplier;
+    private Animation a;
     
-    Enemy follow = null;
-    
-    public Enemy(World w){
-        x = 0;
-        y = 0;
-        speed = 50;
-        angle = 90;
-        w.addObject(this, (int)x, (int)y);
+    /**
+     * 
+     */
+    public Enemy(int h, double f, int d, double m, String s)
+    {
+        health = h;
+        fireRate = f;
+        damage = d;
+        movementMultiplier = m;
+        a = new Animation("img/villain" + s + ".png");
     }
     
-    public Enemy(World w, float x, float y){
-        this.x = x;
-        this.y = y;
-        speed = 50;
-        angle = 90;
-        w.addObject(this, (int)x, (int)y);
-    }
-    
-    public void act(){
-        if(follow != null){
-            
-            
-        } else {
-            angle += 180/60;
-        }
-        while(angle > 360) angle -= 360;
-        while(angle < 0  ) angle += 360;
-
-        x += Math.cos(Math.toRadians(angle))*speed/60;
-        y += Math.sin(Math.toRadians(angle))*speed/60;
+    public int getHealth(){ return health;}
+    public int getDamage() { return damage;}
+    public double getFireRate(int x) { 
+        if(x == 0) return fireRate; // default return fireRate in Hz
+        else if(x == 1) return 1/fireRate; // return how long between shots
         
-        setLocation(x, y);
-        setRotation((int)angle);
+        return -1;
     }
-    
-    public float getAngle(){
-        return angle;
-    }
-    
-    public void setFollowTarget(Enemy e){
-        follow = e;
-    }
+    public double getMovement() { return movementMultiplier;}
+
+
 }
