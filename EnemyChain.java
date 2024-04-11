@@ -13,8 +13,10 @@ public class EnemyChain
     
     public EnemyChain(World w, float headX, float headY, int length){
         Enemy f = null;
+        enemies = new ArrayList<Enemy>();
         for(int i = 0; i < length; i++){
-             Enemy e = new Enemy(w, headX, headY - i*20);
+             Enemy e = new Enemy(w, headX, headY - i*20, i);
+             enemies.add(e);
              if(f != null){
                  e.setFollowTarget(f);
              }

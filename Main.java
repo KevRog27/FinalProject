@@ -8,6 +8,7 @@ import mayflower.*;
  */
 public class Main extends Mayflower
 {
+    
     public Main(){
         super("Galagar", 640, 480);
     }
