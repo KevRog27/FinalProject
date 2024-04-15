@@ -15,8 +15,9 @@ public class Fighter extends Enemy
      */
     public Fighter()
     {
-        super(10, 2, 2, 1.5, "Fighter");
+        super(10, 0.5, 2, 1.5, "Fighter");
     }
 
+    public void act(){super.act();}
     
 }

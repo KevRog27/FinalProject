@@ -12,8 +12,8 @@ public class Jet extends Enemy
     
     public Jet()
     {
-        super(5, 1, 2, 3, "Jet");
+        super(5, 0.2, 2, 3, "Jet");
     }
     
-    
+    public void act(){super.act();}
 }

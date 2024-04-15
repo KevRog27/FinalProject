@@ -14,7 +14,8 @@ public class Bomber extends Enemy
      */
     public Bomber()
     {
-        super(15, 0.5, 5, 1, "Bomber");
+        super(15, 0.1, 5, 1, "Bomber");
     }
 
+    public void act(){super.act();}
 }
