@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment1.params=jetX\ jetY\ background
+comment1.target=MyWorld(int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=HeroJet\ getJet()
+comment3.params=
+comment3.target=void\ act()
+numComments=4
